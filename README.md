@@ -1,25 +1,19 @@
 # TokenMimic
-TokenMimic is a security tool designed to demonstrate process token manipulation and privilege escalation in Windows environments. This tool allows users to impersonate another process's token and elevate privileges to perform system-level operations.
+Description:
+This project demonstrates how to impersonate a user and interact with processes both locally and remotely on Windows systems. It includes features for:
 
-**Features**
-Open Target Process: Access and open the target process using its Process ID (PID).
-Retrieve Access Token: Obtain the security token of the target process.
-Impersonate User: Temporarily act as the target process's user.
-Duplicate Token: Create a duplicate of the target process's token.
-Launch New Process: Start a new process (e.g., command prompt) with the same privileges as the target process.
+Locally impersonating a user and elevating privileges.
+Opening a process on a remote machine by establishing a network connection.
+Listing token privileges and starting a new process using the duplicated token.
+The repository provides a practical implementation using C++ and Windows API, showcasing security and administrative capabilities for system administrators and developers interested in system-level programming.
 
+Key Features:
 
-**Use Cases**
-Demonstrating token manipulation techniques.
-Testing privilege escalation scenarios.
-Learning and understanding Windows security and access tokens.
+Impersonating logged-on users to elevate privileges.
+Networking capabilities to open processes on remote machines.
+Token management and privilege escalation.
+Usage:
+To use, compile the project with a compatible C++ compiler (e.g., Visual Studio) and provide the necessary command-line arguments for IP address, PID, and command to run.
 
-
-**How to Use**
-Clone the repository.
-Compile the source code using a compatible C++ compiler.
-Run the executable with appropriate process ID and observe the privilege escalation.
-
-
-**Disclaimer**
-This tool is intended for educational and testing purposes only. Unauthorized use of this tool on systems you do not own or have explicit permission to test is illegal and unethical. 
+Contributions:
+Contributions and feedback are welcome! Feel free to fork the repository, make improvements, and submit pull requests.
